@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MORROW COFFEE — контакты и бронирование столика</title>
+  <script>document.documentElement.classList.add("js");</script>
+  <meta name="description" content="Контакты MORROW COFFEE: адрес, телефон +7 (900) 100-20-40, почта hello@morrowcoffee.ru, часы работы и форма бронирования столика на 1–8 гостей.">
+  <link rel="stylesheet" href="./fonts/fonts.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="logo" href="./index.html"><strong>MORROW</strong><span>coffee</span></a>
+      <nav class="main-nav" id="siteNav" aria-label="Основная навигация">
+        <ul>
+          <li><a href="./index.html">Главная</a></li>
+          <li><a href="./menu.html">Меню</a></li>
+          <li><a href="./coffee.html">Кофе</a></li>
+          <li><a href="./bakery.html">Выпечка</a></li>
+          <li><a href="./about.html">О нас</a></li>
+          <li><a href="./contacts.html" aria-current="page">Контакты</a></li>
+        </ul>
+      </nav>
+      <a class="header-phone" href="tel:+79001002040">+7 (900) 100-20-40</a>
+      <button class="burger" aria-expanded="false" aria-controls="siteNav" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-title">
+      <div class="wrap">
+        <p class="eyebrow">Контакты · ждём каждый день</p>
+        <h1>Как нас <em class="it">найти</em></h1>
+        <p class="lead">Приходите без предупреждения — чаще всего есть место у окна. Для больших компаний и выходного утра лучше позвонить или забронировать заранее.</p>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="wrap">
+        <div class="contact-grid">
+          <!-- Факты -->
+          <div>
+            <div class="contact-facts reveal">
+              <div class="fact">
+                <p class="f-label">Адрес</p>
+                <p class="f-value" id="addressText">ул. Примерная, д. 8 <span style="display:block; font-size: .8rem; color: var(--eyebrow); font-style: italic;">адрес демонстрационный</span></p>
+                <button class="copy-address" id="copyAddress" type="button" data-address="ул. Примерная, д. 8, MORROW COFFEE">
+                  <span class="ca-label">Скопировать адрес</span>
+                </button>
+              </div>
+              <div class="fact">
+                <p class="f-label">Телефон</p>
+                <p class="f-value"><a href="tel:+79001002040">+7 (900) 100-20-40</a></p>
+              </div>
+              <div class="fact">
+                <p class="f-label">Почта</p>
+                <p class="f-value"><a href="mailto:hello@morrowcoffee.ru">hello@morrowcoffee.ru</a></p>
+              </div>
+              <div class="fact">
+                <p class="f-label">Часы работы</p>
+                <table class="hours-table">
+                  <tbody>
+                    <tr><td>Понедельник — пятница</td><td>8:00 — 22:00</td></tr>
+                    <tr><td>Суббота — воскресенье</td><td>9:00 — 23:00</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="fact">
+                <p class="f-label">Как добраться</p>
+                <p class="map-note">Средний вход со двора, лифт — сразу налево. Если дверь закрыта, позвоните; по будням до 9 утра работает только внутренний вход.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Форма бронирования -->
+          <div id="booking" class="form-card reveal">
+            <h2>Бронь <em class="it">столика</em></h2>
+            <p class="form-note">Столик держим за вами 15 минут после указанного времени. Большая компания? Позвоните — договоримся быстрее.</p>
+            <form id="bookingForm" novalidate>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="bk-name">Имя</label>
+                  <input type="text" id="bk-name" name="name" autocomplete="name" placeholder="Как к вам обращаться" required>
+                  <span class="error-msg" aria-live="polite"></span>
+                </div>
+                <div class="field">
+                  <label for="bk-phone">Телефон</label>
+                  <input type="tel" id="bk-phone" name="phone" autocomplete="tel" placeholder="+7 912 345 67 89" required>
+                  <span class="error-msg" aria-live="polite"></span>
+                </div>
+                <div class="field">
+                  <label for="bk-date">Дата</label>
+                  <input type="date" id="bk-date" name="date" required>
+                  <span class="error-msg" aria-live="polite"></span>
+                </div>
+                <div class="field">
+                  <label for="bk-time">Время</label>
+                  <select id="bk-time" name="time" required>
+                    <option value="">— выберите время —</option>
+                    <!-- слоты 10:00–21:30 генерирует js/main.js -->
+                  </select>
+                  <span class="error-msg" aria-live="polite"></span>
+                </div>
+                <div class="field">
+                  <label for="bk-guests">Гостей</label>
+                  <select id="bk-guests" name="guests">
+                    <option value="2" selected>2</option>
+                    <option value="1">1</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                  </select>
+                  <span class="error-msg" aria-live="polite"></span>
+                </div>
+                <div class="field wide">
+                  <label for="bk-note">Пожелания</label>
+                  <textarea id="bk-note" name="note" placeholder="Например: столик у окна, день рождения, коляска"></textarea>
+                </div>
+              </div>
+              <button class="btn btn-solid form-submit" type="submit">Сформировать бронь</button>
+              <p class="form-fine">Бронь формируется локально в вашем браузере — сайт демонстрационный.</p>
+            </form>
+            <div class="booking-success" id="bookingSuccess" role="status" aria-live="polite">
+              <p style="margin: 0 0 8px;"><strong>Бронь сформирована локально.</strong> Демо-сайт не подключён к системе ресторана — пожалуйста, подтвердите бронь по телефону:</p>
+              <p style="margin: 0;"><a href="tel:+79001002040">+7 (900) 100-20-40</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section-tight">
+      <div class="wrap">
+        <div class="cta-panel reveal">
+          <div>
+            <h2>Первый визит — с <em class="it">круассаном</em></h2>
+            <p>Скажите на баре, что это ваш первый раз у нас, — к кофе дадим комплимент от пекарни.</p>
+          </div>
+          <a class="btn btn-solid" href="./menu.html">Смотреть меню</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="logo" href="./index.html"><strong>MORROW</strong><span>coffee</span></a>
+          <p>Независимая specialty-кофейня. Своя обжарка, свой хлеб и спокойная атмосфера с 2022 года.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Навигация</h3>
+          <ul>
+            <li><a href="./index.html">Главная</a></li>
+            <li><a href="./menu.html">Меню</a></li>
+            <li><a href="./coffee.html">Кофе</a></li>
+            <li><a href="./bakery.html">Выпечка</a></li>
+            <li><a href="./about.html">О нас</a></li>
+            <li><a href="./contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Связаться</h3>
+          <ul>
+            <li><a href="tel:+79001002040">+7 (900) 100-20-40</a></li>
+            <li><a href="mailto:hello@morrowcoffee.ru">hello@morrowcoffee.ru</a></li>
+            <li class="f-plain">пн–пт 8:00–22:00 · сб–вс 9:00–23:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 MORROW COFFEE — демонстрационный сайт, все данные условные.</span>
+        <span>Кофе сегодня. Кофе завтра.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js" defer></script>
+</body>
+</html>

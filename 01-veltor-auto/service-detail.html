@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VELTOR AUTO — Услуга</title>
+  <script>document.documentElement.classList.add("js");</script>
+  <meta name="description" content="Подробности услуги VELTOR AUTO: состав работ, что оплачивается отдельно, время выполнения и цена «от». Демонстрационный сайт — данные условные.">
+  <link rel="stylesheet" href="./css/fonts.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230B0C0E'/%3E%3Cpath d='M8 8l8 16 8-16h-5l-3 7-3-7z' fill='%23E8631A'/%3E%3C/svg%3E">
+</head>
+<body>
+  <a class="skip-link" href="#main">К основному содержанию</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="./index.html">
+        <span class="brand-name">VELTOR&nbsp;<em>AUTO</em></span>
+        <span class="brand-sub">Независимый автосервис</span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Основная навигация">
+        <ul>
+          <li><a href="./index.html">Главная</a></li>
+          <li><a href="./services.html" aria-current="page">Услуги</a></li>
+          <li><a href="./prices.html">Цены</a></li>
+          <li><a href="./about.html">О мастерской</a></li>
+          <li><a href="./contacts.html">Контакты</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a class="header-phone" href="tel:+79001002030">+7 (900) 100-20-30</a>
+          <a class="btn btn-accent" href="./contacts.html#form">Записаться</a>
+        </div>
+      </nav>
+      <a class="header-phone" href="tel:+79001002030">+7 (900) 100-20-30</a>
+      <a class="btn btn-accent btn-sm header-cta" href="./contacts.html#form">Записаться</a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-head">
+      <div class="container">
+        <p class="kicker">VT·Услуги — подробнее</p>
+        <h1 id="detail-title">Услуга</h1>
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+          <a href="./index.html">Главная</a>
+          <a href="./services.html">Услуги</a>
+          <span aria-current="page" id="detail-crumb">Услуга</span>
+        </nav>
+      </div>
+    </section>
+
+    <div class="section" id="service-detail">
+      <div class="container">
+
+        <figure class="detail-figure">
+          <img id="detail-image" src="./images/hero-workshop.jpg" alt="Фото работы в мастерской" width="1600" height="1063">
+          <figcaption id="detail-figure-cap">VT·Оборудование</figcaption>
+        </figure>
+
+        <div class="detail-grid">
+          <div class="detail-body">
+            <p class="detail-short text-muted" id="detail-short" style="font-size:1.05rem;color:var(--text)"></p>
+            <div class="detail-block">
+              <h2>Что делаем</h2>
+              <p id="detail-text"></p>
+            </div>
+
+            <div class="detail-block">
+              <h2>Что входит в работу</h2>
+              <ol class="checklist" id="detail-includes"></ol>
+            </div>
+
+            <div class="detail-block">
+              <h2>Отдельно оплачивается</h2>
+              <ul class="extra-list" id="detail-extra"></ul>
+            </div>
+          </div>
+
+          <aside class="detail-aside" aria-label="Цена и запись">
+            <div class="aside-card">
+              <span class="mono-label">Цена</span>
+              <div class="detail-price" id="detail-price">— ₽</div>
+              <div class="aside-specs">
+                <dl style="display:contents">
+                  <div><dt>Время</dt><dd id="detail-time">—</dd></div>
+                  <div><dt>Категория</dt><dd id="detail-cat">—</dd></div>
+                  <div><dt>Гарантия</dt><dd>6 мес.</dd></div>
+                </dl>
+              </div>
+              <small class="mono" id="detail-price-note" style="margin-top:14px;display:block;font-size:0.7rem;color:var(--muted);letter-spacing:0.04em"></small>
+              <a class="btn btn-accent" id="detail-cta" href="./contacts.html#form">Записаться</a>
+            </div>
+
+            <div class="aside-card select-block">
+              <label class="mono-label" for="service-select">Другая услуга</label>
+              <select id="service-select"></select>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+
+    <section class="section" aria-labelledby="related-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="kicker">VT·С этим обычно делают</p>
+            <h2 id="related-title">Связанные услуги</h2>
+          </div>
+        </div>
+        <ul class="related-grid" id="detail-related"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="./index.html">
+            <span class="brand-name">VELTOR&nbsp;<em>AUTO</em></span>
+            <span class="brand-sub">Независимый автосервис</span>
+          </a>
+          <p class="footer-note">Диагностика, ТО, подвеска и тормоза. Сначала причина — потом смета. Гарантия на работы — 6 месяцев.</p>
+        </div>
+        <nav aria-label="Навигация в футере">
+          <div class="footer-title">Разделы</div>
+          <ul>
+            <li><a href="./index.html">Главная</a></li>
+            <li><a href="./services.html">Услуги</a></li>
+            <li><a href="./prices.html">Цены</a></li>
+            <li><a href="./about.html">О мастерской</a></li>
+            <li><a href="./contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="footer-contacts">
+          <div class="footer-title">Связь</div>
+          <ul>
+            <li><a class="mono" href="tel:+79001002030">+7 (900) 100-20-30</a></li>
+            <li><a href="mailto:zapis@veltor-auto.ru">zapis@veltor-auto.ru</a></li>
+            <li><span class="text-muted">пн–сб · 9:00–20:00</span></li>
+            <li><span class="text-muted">ул. Примерная, д. 12</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> VELTOR AUTO — демонстрационный сайт, данные условные</span>
+        <a href="#top">Наверх ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js" defer></script>
+</body>
+</html>

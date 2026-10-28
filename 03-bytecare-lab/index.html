@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BYTECARE LAB — ремонт компьютеров и ноутбуков в лаборатории</title>
+  <script>document.documentElement.classList.add("js");</script>
+<meta name="description" content="Мастерская BYTECARE LAB: аппаратный ремонт ноутбуков, ПК и периферии. Диагностика по 24 точкам, честные цены, гарантия 90 дней на работы. Демонстрационный сайт.">
+<link rel="stylesheet" href="./css/style.css">
+<script src="./js/main.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к основному содержанию</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="./index.html" aria-label="BYTECARE LAB — на главную">
+      <span class="logo__mark" aria-hidden="true">BC</span>
+      <span>BYTECARE LAB<span class="logo__tag">computer repair lab</span></span>
+    </a>
+    <button class="burger" aria-controls="site-nav" aria-expanded="false">
+      <span></span><span></span><span></span>
+      <span class="visually-hidden">Меню</span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Основная навигация">
+      <ul>
+        <li><a href="./index.html" aria-current="page">Главная</a></li>
+        <li><a href="./services.html">Услуги</a></li>
+        <li><a href="./diagnostics.html">Диагностика</a></li>
+        <li><a href="./prices.html">Цены</a></li>
+        <li><a href="./warranty.html">Гарантия</a></li>
+        <li><a href="./contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
+    <a class="header-cta" href="tel:+79001002050">+7 900 100-20-50</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <div class="hero__meta">
+          <span class="hero__badge"><span class="dot" aria-hidden="true"></span>приём ежедневно · пн–сб 10:00–19:00</span>
+        </div>
+        <h1>Каждое устройство&nbsp;проходит 24&nbsp;точки проверки</h1>
+        <p class="lead">Работаем как лаборатория: сначала чёткий протокол диагностики, затем письменное согласование стоимости, и только после этого — ремонт. Вы всегда знаете, что происходит с вашим устройством.</p>
+        <p class="hero__demo">// подпись: цифры и фотографии — демонстрационные</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="./contacts.html#form">Оставить заявку</a>
+          <a class="btn btn--ghost" href="./prices.html">Цены</a>
+        </div>
+      </div>
+      <figure class="hero__photo">
+        <img src="./images/hero-laptop-repair.jpg" alt="Мастер разбирает ноутбук на рабочем месте: видна система охлаждения и материнская плата">
+        <figcaption>SAMPLE-PHOTO · LAB/WORKSTATION-01 · изображение демонстрационное</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats" aria-label="Показатели мастерской">
+    <div class="wrap">
+      <div class="stat">
+        <span class="stat__num" data-count="2600">0</span>
+        <span class="stat__label">устройств обслужено за год<span class="demo-note">данные демонстрационные</span></span>
+      </div>
+      <div class="stat">
+        <span class="stat__num" data-count="6">0</span>
+        <span class="stat__label">лет опыта работы мастерской<span class="demo-note">данные демонстрационные</span></span>
+      </div>
+      <div class="stat">
+        <span class="stat__num" data-count="24">0</span>
+        <span class="stat__label">точки проверки на каждом устройстве<span class="demo-note">данные демонстрационные</span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONSULTANT -->
+  <section class="section" id="consultant" aria-labelledby="consultant-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="section-head__kicker">SYMPTOM.SCAN</span>
+          <h2 id="consultant-title">Что случилось с устройством?</h2>
+          <p>Выберите симптом — подскажем, с какой услуги обычно начинают, и покажем карточку ниже.</p>
+        </div>
+      </div>
+      <div class="chips-block">
+        <div class="chips">
+          <button class="chip" type="button">Греется</button>
+          <button class="chip" type="button">Не включается</button>
+          <button class="chip" type="button">Синий экран</button>
+          <button class="chip" type="button">Долго грузится</button>
+          <button class="chip" type="button">Залили жидкостью</button>
+          <button class="chip" type="button">Шумит и трещит</button>
+          <button class="chip" type="button">Упала производительность</button>
+        </div>
+        <div class="chips-result" role="region" aria-live="polite">
+          <h3 id="chips-result-title"></h3>
+          <p id="chips-result-text"></p>
+          <a class="link-arrow" id="chips-result-link" href="./services.html">Подробнее на странице услуг →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SHORT -->
+  <section class="section section--tight" id="services" aria-labelledby="services-title">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="section-head__kicker">CATALOG.SNAPSHOT</span>
+          <h2 id="services-title">Основные услуги</h2>
+          <p>Полные описания, состав работ и позиции «оплачивается отдельно» — на странице услуг.</p>
+        </div>
+        <a class="btn btn--outline" href="./services.html">Весь каталог</a>
+      </div>
+      <div class="cards-grid reveal" id="index-services"></div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section" id="process" aria-labelledby="process-title">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="section-head__kicker">PROTOCOL.01→06</span>
+          <h2 id="process-title">Как мы работаем</h2>
+          <p>Одна и та же последовательность для ноутбука, игрового ПК и периферии.</p>
+        </div>
+        <a class="btn btn--outline" href="./diagnostics.html">Подробно о диагностике</a>
+      </div>
+      <div class="steps reveal">
+        <article class="step"><span class="step__num">01</span><h3>Заявка</h3><p>Звонок или форма на сайте: фиксируем модель и симптомы до вашего приезда.</p></article>
+        <article class="step"><span class="step__num">02</span><h3>Диагностика</h3><p>Устройство проходит проверку по 24 точкам — от питания до температурных замеров.</p></article>
+        <article class="step"><span class="step__num">03</span><h3>Согласование</h3><p>Присылаем список работ и цену. Ремонт начинаем только после вашего «да».</p></article>
+        <article class="step"><span class="step__num">04</span><h3>Ремонт</h3><p>Разбираем и ремонтируем на антистатическом рабочем месте, все детали фиксируются в рабочем листе заказа.</p></article>
+        <article class="step"><span class="step__num">05</span><h3>Проверка</h3><p>Повторный прогон 22–24 точки проверки: стресс-тест, температуры, стабильность.</p></article>
+        <article class="step"><span class="step__num">06</span><h3>Выдача</h3><p>Отдаём устройство с чеком работ и гарантийным талоном на 90 дней.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- WARRANTY + CTA -->
+  <section class="section section--tight">
+    <div class="wrap split reveal">
+      <div class="figure">
+        <img src="./images/workstation-open.jpg" alt="Открытый корпус рабочей станции после сборки: аккуратная укладка кабелей">
+        <figcaption>QC-CHECK · BUILD-02 · изображение демонстрационное</figcaption>
+      </div>
+      <div>
+        <span class="section-head__kicker">WARRANTY.90D</span>
+        <h2>Гарантия 90 дней на работы</h2>
+        <p>Даём гарантию на выполненные работы и переустанавливаем бесплатно, если тот же узел снова даёт сбой. Условия — честные, со списком исключений: механические повреждения после выдачи и залития не покрываются.</p>
+        <p><a href="./warranty.html">Прочитать условия гарантии →</a></p>
+        <div style="margin-top:20px"><a class="btn btn--onlight" href="./contacts.html#form">Записаться в мастерскую</a></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <a class="logo" href="./index.html" style="margin-bottom:14px">
+        <span class="logo__mark" aria-hidden="true">BC</span>
+        <span>BYTECARE LAB<span class="logo__tag">computer repair lab</span></span>
+      </a>
+      <p style="max-width:320px">Ремонт и обслуживание ноутбуков, ПК и периферии. Протокол диагностики — 24 точки. Демонстрационный сайт мастерской.</p>
+    </div>
+    <div>
+      <h3>Навигация</h3>
+      <ul>
+        <li><a href="./index.html">Главная</a></li>
+        <li><a href="./services.html">Услуги</a></li>
+        <li><a href="./diagnostics.html">Диагностика</a></li>
+        <li><a href="./prices.html">Цены</a></li>
+        <li><a href="./warranty.html">Гарантия</a></li>
+        <li><a href="./contacts.html">Контакты</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Связаться</h3>
+      <ul>
+        <li><a href="tel:+79001002050">+7 (900) 100-20-50</a></li>
+        <li><a href="mailto:hello@bytecare-lab.ru">hello@bytecare-lab.ru</a></li>
+        <li>пн–сб 10:00–19:00</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="wrap-inner">
+      <span>© 2026 BYTECARE LAB — демонстрационный сайт, данные условные</span>
+      <span class="mono">BUILD v1.0 · no-network demo</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

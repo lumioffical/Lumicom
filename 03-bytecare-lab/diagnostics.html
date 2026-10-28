@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BYTECARE LAB — процесс диагностики: 6 шагов и 24 точки проверки</title>
+  <script>document.documentElement.classList.add("js");</script>
+<meta name="description" content="Как работает диагностика BYTECARE LAB: заявка, проверка по 24 точкам, письменное согласование цены, ремонт, контрольная проверка и выдача. Демонстрационный сайт мастерской.">
+<link rel="stylesheet" href="./css/style.css">
+<script src="./js/main.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к основному содержанию</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="./index.html" aria-label="BYTECARE LAB — на главную">
+      <span class="logo__mark" aria-hidden="true">BC</span>
+      <span>BYTECARE LAB<span class="logo__tag">computer repair lab</span></span>
+    </a>
+    <button class="burger" aria-controls="site-nav" aria-expanded="false">
+      <span></span><span></span><span></span>
+      <span class="visually-hidden">Меню</span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Основная навигация">
+      <ul>
+        <li><a href="./index.html">Главная</a></li>
+        <li><a href="./services.html">Услуги</a></li>
+        <li><a href="./diagnostics.html" aria-current="page">Диагностика</a></li>
+        <li><a href="./prices.html">Цены</a></li>
+        <li><a href="./warranty.html">Гарантия</a></li>
+        <li><a href="./contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
+    <a class="header-cta" href="tel:+79001002050">+7 900 100-20-50</a>
+  </div>
+</header>
+
+<main id="main">
+  <div class="page-hero">
+    <div class="wrap">
+      <p class="crumbs"><a href="./index.html">index</a> / <span aria-current="page">diagnostics</span></p>
+      <h1>Процесс: от заявки до выдачи</h1>
+      <p class="lead">Диагностика — сердце нашей работы. Мы не меняем детали наугад: сначала устанавливаем причину, потом согласуем смету и только затем берём паяльник. Ниже — настоящая последовательность этапов.</p>
+      <p class="demo-note">Важно: мы не обещаем «гарантированное восстановление любых устройств» — если диагностика покажет неремонтопригодность, вы забираете устройство и платите только за диагностику.</p>
+    </div>
+  </div>
+
+  <!-- STEPS -->
+  <section class="section" id="steps" aria-labelledby="steps-title">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="section-head__kicker">PROTOCOL.01→06</span>
+          <h2 id="steps-title">Шесть этапов</h2>
+          <p>Этапы идут строго по порядку — переход к следующему возможен только после закрытия предыдущего.</p>
+        </div>
+      </div>
+      <div class="steps reveal">
+        <article class="step"><span class="step__num">01</span><h3>Заявка</h3><p>Заявка по телефону или через форму. Фиксируем модель, комплектность и симптомы — это ускоряет диагностику.</p></article>
+        <article class="step"><span class="step__num">02</span><h3>Диагностика</h3><p>Проверка по 24 точкам: питание, плата, память, накопитель, охлаждение, программная среда.</p></article>
+        <article class="step"><span class="step__num">03</span><h3>Согласование стоимости</h3><p>Присылаем протокол и смету: что входит в цену, что оплачивается отдельно. Без вашего «да» работы не начинаются.</p></article>
+        <article class="step"><span class="step__num">04</span><h3>Ремонт</h3><p>Работаем на антистатическом рабочем месте, исходные детали храним до выдачи.</p></article>
+        <article class="step"><span class="step__num">05</span><h3>Проверка · 22–24 точки</h3><p>Контрольный прогон: стресс-тест, температурные замеры, стабильность памяти и диска в течение часа.</p></article>
+        <article class="step"><span class="step__num">06</span><h3>Выдача</h3><p>Выдаём устройство, чек работ и гарантийный талон. Показываем протокол проверки.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE CHECK -->
+  <section class="section section--tight">
+    <div class="wrap split reveal" style="align-items:start">
+      <div>
+        <span class="section-head__kicker">CHECKLIST.SCAN</span>
+        <h2>Что проверяем</h2>
+        <p>База из 14 пунктов расширяется до 24 в зависимости от симптомов: например, при перегреве добавляются температурные замеры под нагрузкой и проверка термопрокладок.</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:8px">
+          <span class="badge badge--diagnostics">в диагностике</span>
+          <span class="badge badge--progress">согласование</span>
+          <span class="badge badge--accept">ремонт</span>
+          <span class="badge badge--done">готов</span>
+        </div>
+        <p class="demo-note" style="margin-top:14px">Бейджи выше — демонстрация статусов, которые вы видите по своему заказу.</p>
+      </div>
+      <ul class="checklist" data-checklist>
+        <li>Проверка блока питания и портов зарядки</li>
+        <li>Напряжения на линиях материнской платы</li>
+        <li>Тест оперативной памяти (полный прогон)</li>
+        <li>Состояние и здоровье SSD/HDD (SMART)</li>
+        <li>Скорость чтения/записи накопителя</li>
+        <li>Температуры CPU/GPU в простое и под нагрузкой</li>
+        <li>Обороты и шум вентиляторов</li>
+        <li>Запылённость радиаторов и сот</li>
+        <li>Состояние термопасты и термопрокладок</li>
+        <li>Диагностика разъёмов USB, аудио, HDMI</li>
+        <li>Работа клавиатуры и тачпада</li>
+        <li>Матрица: подсветка, битые пиксели, полосы</li>
+        <li>Батарея: ёмкость и циклы charge/discharge</li>
+        <li>Программная среда: автозагрузка, ошибки системы</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- STATUS BADGES / BEFORE ISSUE -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="section-head__kicker">STATUS.TRACK</span>
+          <h2>Статусы заказа</h2>
+          <p>Перед выдачей каждый заказ проходит цепочку статусов — вы видите текущий статус по номеру телефона.</p>
+        </div>
+      </div>
+      <div class="cards-grid cards-grid--4 reveal"> 
+        <div class="card" style="align-items:flex-start">
+          <span class="badge badge--diagnostics">в диагностике</span>
+          <p>Устройство на стенде, идёт сбор данных по точкам проверки.</p>
+        </div>
+        <div class="card" style="align-items:flex-start">
+          <span class="badge badge--progress">согласование</span>
+          <p>Смета готова и отправлена вам. Ждём подтверждения объёма работ.</p>
+        </div>
+        <div class="card" style="align-items:flex-start">
+          <span class="badge badge--accept">в ремонте</span>
+          <p>Работы подтверждены, мастер выполняет их на своём рабочем месте.</p>
+        </div>
+        <div class="card" style="align-items:flex-start">
+          <span class="badge badge--done">готов</span>
+          <p>Контрольный прогон пройден. Устройство можно забрать или получить доставкой.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTO SPLIT -->
+  <section class="section section--tight">
+    <div class="wrap split reveal">
+      <div>
+        <span class="section-head__kicker">DIAG.TABLE</span>
+        <h2>Протокол диагностики</h2>
+        <p>По результатам вы получаете короткий протокол: что проверено, что обнаружено, варианты ремонта и цена каждого. Этого достаточно, чтобы принять решение без визита в мастерскую.</p>
+        <a class="btn btn--outline" href="./prices.html">Цены на диагностику</a>
+      </div>
+      <div class="figure">
+        <img src="./images/pc-bench-disassembly.jpg" alt="Диагностический стол: разобранный ноутбук, модули памяти и инструменты">
+        <figcaption>DIAG-BENCH-01 · изображение демонстрационное</figcaption>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="wrap">
+      <div>
+        <h2>Начнём с чистого листа</h2>
+        <p>Опишите симптомы — подскажем, на что укажет диагностика и сколько это стоит.</p>
+      </div>
+      <div class="cta-band__actions">
+        <a class="btn btn--primary" href="./contacts.html#form">Оставить заявку</a>
+        <a class="btn btn--ghost" href="./index.html#consultant">Подобрать услугу</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <a class="logo" href="./index.html" style="margin-bottom:14px">
+        <span class="logo__mark" aria-hidden="true">BC</span>
+        <span>BYTECARE LAB<span class="logo__tag">computer repair lab</span></span>
+      </a>
+      <p style="max-width:320px">Ремонт и обслуживание ноутбуков, ПК и периферии. Демонстрационный сайт мастерской.</p>
+    </div>
+    <div>
+      <h3>Навигация</h3>
+      <ul>
+        <li><a href="./index.html">Главная</a></li>
+        <li><a href="./services.html">Услуги</a></li>
+        <li><a href="./diagnostics.html">Диагностика</a></li>
+        <li><a href="./prices.html">Цены</a></li>
+        <li><a href="./warranty.html">Гарантия</a></li>
+        <li><a href="./contacts.html">Контакты</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Связаться</h3>
+      <ul>
+        <li><a href="tel:+79001002050">+7 (900) 100-20-50</a></li>
+        <li><a href="mailto:hello@bytecare-lab.ru">hello@bytecare-lab.ru</a></li>
+        <li>пн–сб 10:00–19:00</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="wrap-inner">
+      <span>© 2026 BYTECARE LAB — демонстрационный сайт, данные условные</span>
+      <span class="mono">BUILD v1.0 · no-network demo</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

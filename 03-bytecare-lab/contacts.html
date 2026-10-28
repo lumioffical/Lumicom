@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BYTECARE LAB — контакты мастера и форма заявки</title>
+  <script>document.documentElement.classList.add("js");</script>
+<meta name="description" content="Контакты BYTECARE LAB: телефон +7 (900) 100-20-50, почта, часы работы, форма заявки на диагностику. Форма работает локально — данные никуда не отправляются.">
+<link rel="stylesheet" href="./css/style.css">
+<script src="./js/main.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к основному содержанию</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="./index.html" aria-label="BYTECARE LAB — на главную">
+      <span class="logo__mark" aria-hidden="true">BC</span>
+      <span>BYTECARE LAB<span class="logo__tag">computer repair lab</span></span>
+    </a>
+    <button class="burger" aria-controls="site-nav" aria-expanded="false">
+      <span></span><span></span><span></span>
+      <span class="visually-hidden">Меню</span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Основная навигация">
+      <ul>
+        <li><a href="./index.html">Главная</a></li>
+        <li><a href="./services.html">Услуги</a></li>
+        <li><a href="./diagnostics.html">Диагностика</a></li>
+        <li><a href="./prices.html">Цены</a></li>
+        <li><a href="./warranty.html">Гарантия</a></li>
+        <li><a href="./contacts.html" aria-current="page">Контакты</a></li>
+      </ul>
+    </nav>
+    <a class="header-cta" href="tel:+79001002050">+7 900 100-20-50</a>
+  </div>
+</header>
+
+<main id="main">
+  <div class="page-hero">
+    <div class="wrap">
+      <p class="crumbs"><a href="./index.html">index</a> / <span aria-current="page">contacts</span></p>
+      <h1>Контакты</h1>
+      <p class="lead">Позвоните, напишите или заполните форму заявки — перезвоним в рабочие часы и подскажем, что делать с устройством до приёма.</p>
+    </div>
+  </div>
+
+  <section class="section" id="form-section" aria-labelledby="contacts-title">
+    <div class="wrap contact-grid">
+
+      <div>
+        <span class="section-head__kicker" id="contacts-title">CONTACT.SHEET</span>
+
+        <div class="copy-row">
+          <span class="copy-row__value">ул. Примерная, д. 20<small>адрес демонстрационный · вход со двора · парковка рядом</small></span>
+          <button class="copy-btn" type="button" data-copy="ул. Примерная, д. 20">Копировать адрес</button>
+        </div>
+
+        <div class="copy-row">
+          <span class="copy-row__value">+7 (900) 100-20-50<small>пн–сб 10:00–19:00 · звонки и WhatsApp/Telegram</small></span>
+          <button class="copy-btn" type="button" data-copy="+7 (900) 100-20-50">Копировать телефон</button>
+        </div>
+
+        <div class="copy-row">
+          <span class="copy-row__value">hello@bytecare-lab.ru<small>для протоколов диагностики и смет</small></span>
+          <button class="copy-btn" type="button" data-copy="hello@bytecare-lab.ru">Копировать почту</button>
+        </div>
+
+        <div class="copy-row">
+          <span class="copy-row__value">пн–сб 10:00–19:00<small>воскресенье — выходной · приём вне очереди по гарантии</small></span>
+        </div>
+
+        <figure class="figure" style="margin-top:24px">
+          <img src="./images/ram-modules.jpg" alt="Модули оперативной памяти на разлаженном лабораторном столе">
+          <figcaption>PARTS-BENCH · изображение демонстрационное</figcaption>
+        </figure>
+      </div>
+
+      <div class="form-panel" id="form" tabindex="-1">
+        <h2>Форма заявки</h2>
+        <p class="form-note">Заявка обрабатывается локально в браузере — демо-сайт не отправляет данные на сервер.</p>
+        <form id="request-form" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="f-name">Имя</label>
+              <input type="text" id="f-name" name="name" autocomplete="name" placeholder="Как к вам обращаться">
+              <span class="error-msg">Введите имя (минимум 2 символа)</span>
+            </div>
+            <div class="field">
+              <label for="f-phone">Телефон <span class="hint">формат +7 или 8</span></label>
+              <input type="tel" id="f-phone" name="phone" autocomplete="tel" placeholder="+7 900 123-45-67">
+              <span class="error-msg">Введите номер в формате +7 900 123-45-67</span>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="f-device">Тип устройства</label>
+              <select id="f-device" name="device">
+                <option value="">Выберите тип…</option>
+                <option value="laptop">Ноутбук</option>
+                <option value="pc">ПК</option>
+                <option value="all-in-one">Моноблок</option>
+                <option value="peripheral">Периферия</option>
+                <option value="other">Другое</option>
+              </select>
+              <span class="error-msg">Выберите тип устройства</span>
+            </div>
+            <div class="field">
+              <label for="f-model">Модель <span class="hint">если известна</span></label>
+              <input type="text" id="f-model" name="model" placeholder="например, Lenovo IdeaPad 5">
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-problem">Описание проблемы</label>
+            <textarea id="f-problem" name="problem" placeholder="Что случилось, когда началось, что уже пробовали"></textarea>
+            <span class="error-msg">Опишите проблему подробнее (минимум 10 символов)</span>
+          </div>
+          <button class="btn btn--primary" type="submit" style="width:100%">Сформировать заявку</button>
+        </form>
+        <div class="form-success" id="form-success" role="status" tabindex="-1">
+          <strong>Заявка сформирована локально — демо-сайт не отправляет данные на сервер.</strong>
+          <p>Чтобы записаться по-настоящему, перезвоните нам: <a href="tel:+79001002050">+7 (900) 100-20-50</a> — пн–сб 10:00–19:00.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <a class="logo" href="./index.html" style="margin-bottom:14px">
+        <span class="logo__mark" aria-hidden="true">BC</span>
+        <span>BYTECARE LAB<span class="logo__tag">computer repair lab</span></span>
+      </a>
+      <p style="max-width:320px">Ремонт и обслуживание ноутбуков, ПК и периферии. Демонстрационный сайт мастерской.</p>
+    </div>
+    <div>
+      <h3>Навигация</h3>
+      <ul>
+        <li><a href="./index.html">Главная</a></li>
+        <li><a href="./services.html">Услуги</a></li>
+        <li><a href="./diagnostics.html">Диагностика</a></li>
+        <li><a href="./prices.html">Цены</a></li>
+        <li><a href="./warranty.html">Гарантия</a></li>
+        <li><a href="./contacts.html">Контакты</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Связаться</h3>
+      <ul>
+        <li><a href="tel:+79001002050">+7 (900) 100-20-50</a></li>
+        <li><a href="mailto:hello@bytecare-lab.ru">hello@bytecare-lab.ru</a></li>
+        <li>пн–сб 10:00–19:00</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="wrap-inner">
+      <span>© 2026 BYTECARE LAB — демонстрационный сайт, данные условные</span>
+      <span class="mono">BUILD v1.0 · no-network demo</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

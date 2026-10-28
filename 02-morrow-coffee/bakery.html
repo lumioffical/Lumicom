@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MORROW COFFEE — выпечка и десерты</title>
+  <script>document.documentElement.classList.add("js");</script>
+  <meta name="description" content="Выпечка MORROW COFFEE: круассаны, шокобулочки, тарты и чизкейк. Состав, пометки аллергенов и расписание — что печётся к утру, а что в течение дня.">
+  <link rel="stylesheet" href="./fonts/fonts.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="logo" href="./index.html"><strong>MORROW</strong><span>coffee</span></a>
+      <nav class="main-nav" id="siteNav" aria-label="Основная навигация">
+        <ul>
+          <li><a href="./index.html">Главная</a></li>
+          <li><a href="./menu.html">Меню</a></li>
+          <li><a href="./coffee.html">Кофе</a></li>
+          <li><a href="./bakery.html" aria-current="page">Выпечка</a></li>
+          <li><a href="./about.html">О нас</a></li>
+          <li><a href="./contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <a class="header-phone" href="tel:+79001002040">+7 (900) 100-20-40</a>
+      <button class="burger" aria-expanded="false" aria-controls="siteNav" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-title">
+      <div class="wrap">
+        <p class="eyebrow">Выпечка · своя пекарская секция</p>
+        <h1>Печём <em class="it">сами</em>, поэтому продаём до последнего</h1>
+        <p class="lead">Круассаны выходят из печи к открытию, тарты — ближе к полудню. Всё, что остаётся к вечеру, разбирают на «комплимент с собой» — мы не делаем запасы «на завтра».</p>
+        <p class="disclaimer-note" style="margin-top: 14px;">Цены и состав — демонстрационные, для портфолио-проекта.</p>
+      </div>
+    </section>
+
+    <!-- Утренняя смена -->
+    <section class="section-tight">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">К утру · с 8:00</p>
+          <h2>Утренняя <em class="it">горячая</em> смена</h2>
+        </div>
+        <div class="items-grid">
+          <article class="menu-card reveal">
+            <div class="mc-photo"><img src="./images/croissant.jpg" alt="Свежеиспечённый круассан с румяными слоями" width="1920" height="1440" style="width:100%; aspect-ratio: 16/10; object-fit: cover;"></div>
+            <div class="mc-body">
+              <span class="mc-cat">К выпечке</span>
+              <div class="mc-title-row"><h3>Круассан классический</h3></div>
+              <p class="mc-desc"><em class="flavor">72 часа холодного расстойки, французское масло 82,5% — хруст громкий, крошка нежная.</em></p>
+              <div class="allergy-row"><span class="allergy-badge">глютен</span><span class="allergy-badge">молоко</span></div>
+              <p class="mc-price"><strong>190 ₽</strong></p>
+            </div>
+          </article>
+          <article class="menu-card reveal">
+            <div class="mc-photo"><img src="./images/chocolate-glazed-danish-bun.jpg" alt="Булочка с шоколадной глазурью и ореховой крошкой — шокобулочка" width="1920" height="1440" style="width:100%; aspect-ratio: 16/10; object-fit: cover;"></div>
+            <div class="mc-body">
+              <span class="mc-cat">К выпечке</span>
+              <div class="mc-title-row"><h3>Шокобулочка</h3></div>
+              <p class="mc-desc"><em class="flavor">Бриошь с двумя полосками тёмного шоколада 60% и морской солью сверху.</em></p>
+              <div class="allergy-row"><span class="allergy-badge">глютен</span><span class="allergy-badge">молоко</span><span class="allergy-badge">яйца</span></div>
+              <p class="mc-price"><strong>220 ₽</strong></p>
+            </div>
+          </article>
+          <article class="menu-card reveal">
+            <div class="mc-photo"><img src="./images/banana-cake.jpg" alt="Ломоть бананового пирога с грецким орехом" width="1024" height="768" style="width:100%; aspect-ratio: 16/10; object-fit: cover;"></div>
+            <div class="mc-body">
+              <span class="mc-cat">К выпечке</span>
+              <div class="mc-title-row"><h3>Банановый пирог</h3></div>
+              <p class="mc-desc"><em class="flavor">Только переспелые бананы, грецкий орех и тростниковый сахар — как у бабушки, но точнее.</em></p>
+              <div class="allergy-row"><span class="allergy-badge">глютен</span><span class="allergy-badge">орехи</span><span class="allergy-badge">яйца</span></div>
+              <p class="mc-price"><strong>240 ₽</strong></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- В течение дня -->
+    <section class="section-tight">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">В течение дня · с 12:00</p>
+          <h2>Дневная <em class="it">витрина</em></h2>
+        </div>
+        <div class="items-grid">
+          <article class="menu-card reveal">
+            <div class="mc-photo"><img src="./images/bakery-pastries.jpg" alt="Десерт дня на прилавке — макаруны ручной работы" width="1920" height="2868" style="width:100%; aspect-ratio: 16/10; object-fit: cover;"></div>
+            <div class="mc-body">
+              <span class="mc-cat">Десерты</span>
+              <div class="mc-title-row"><h3>Десерт дня</h3><span class="mc-size">сезонный</span></div>
+              <p class="mc-desc"><em class="flavor">Меняем по сезону: сегодня — макаруны ручной работы, к пятницам — сдоба с корицей.</em></p>
+              <div class="allergy-row"><span class="allergy-badge">глютен</span><span class="allergy-badge">яйца</span><span class="allergy-badge olive">зависит от начинки</span></div>
+              <p class="mc-price"><strong>240 ₽</strong></p>
+            </div>
+          </article>
+          <article class="menu-card reveal">
+            <div class="mc-photo"><img src="./images/strawberry-tart.jpg" alt="Ягодный тарт с ванильным кремом" width="1920" height="1280" style="width:100%; aspect-ratio: 16/10; object-fit: cover;"></div>
+            <div class="mc-body">
+              <span class="mc-cat">Десерты</span>
+              <div class="mc-title-row"><h3>Тарт с ягодами</h3></div>
+              <p class="mc-desc"><em class="flavor">Песочная база, ванильный крем патисьер и столько ягод, сколько влезет по красоте.</em></p>
+              <div class="allergy-row"><span class="allergy-badge">глютен</span><span class="allergy-badge">молоко</span><span class="allergy-badge">яйца</span></div>
+              <p class="mc-price"><strong>290 ₽</strong></p>
+            </div>
+          </article>
+          <article class="menu-card reveal">
+            <div class="mc-photo"><img src="./images/cheesecake.jpg" alt="Кусок запечённого чизкейка на десертной тарелке" width="1920" height="1280" style="width:100%; aspect-ratio: 16/10; object-fit: cover;"></div>
+            <div class="mc-body">
+              <span class="mc-cat">Десерты</span>
+              <div class="mc-title-row"><h3>Чизкейк</h3></div>
+              <p class="mc-desc"><em class="flavor">Запечённый нью-йорк на песочной базе: плотный, с сырной кислинкой, подаётся холодным.</em></p>
+              <div class="allergy-row"><span class="allergy-badge">глютен</span><span class="allergy-badge">молоко</span><span class="allergy-badge">яйца</span></div>
+              <p class="mc-price"><strong>320 ₽</strong></p>
+            </div>
+          </article>
+        </div>
+
+        <div class="sun-note reveal" style="margin-top: 34px;">
+          <p style="font-family: var(--serif); font-style: italic; color: var(--coffee); font-size: 1.05rem; margin: 0;">Есть аллергия? Скажите бариста — пекарь расскажет состав по каждой позиции. Безглютеновая позиция бывает по субботам; какао и чай варим без ореховых сиропов.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ритм пекарни -->
+    <section class="section-tight">
+      <div class="wrap">
+        <hr class="hairline">
+        <div class="two-col" style="margin-top: 30px;">
+          <div class="section-head reveal" style="margin-bottom: 0;">
+            <p class="eyebrow">Ритм пекарни</p>
+            <h2>Когда что <em class="it">печётся</em></h2>
+          </div>
+          <div class="menu-lines">
+            <div class="menu-line"><span class="ml-name">Круассан и шокобулочка</span><span class="ml-note">первая партия</span><span class="ml-dots"></span><span class="ml-price">8:00</span></div>
+            <div class="menu-line"><span class="ml-name">Банановый пирог</span><span class="ml-note">печётся утром к обеду</span><span class="ml-dots"></span><span class="ml-price">10:30</span></div>
+            <div class="menu-line"><span class="ml-name">Десерт дня</span><span class="ml-note">вторая смена</span><span class="ml-dots"></span><span class="ml-price">12:00</span></div>
+            <div class="menu-line"><span class="ml-name">Тарты и чизкейк</span><span class="ml-note">готовятся заранее, на витрину к полудню</span><span class="ml-dots"></span><span class="ml-price">12:00</span></div>
+            <div class="menu-line"><span class="ml-name">Второй заход круассанов</span><span class="ml-note">к выходным — дважды в день</span><span class="ml-dots"></span><span class="ml-price">17:00</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section-tight">
+      <div class="wrap">
+        <div class="cta-panel reveal">
+          <div>
+            <h2>Хотите целый <em class="it">круассан к завтраку</em>?</h2>
+            <p>Бронируйте столик к 9 утра — к вашему приходу партия только что выйдет из печи.</p>
+          </div>
+          <a class="btn btn-solid" href="./contacts.html#booking">Забронировать столик</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="logo" href="./index.html"><strong>MORROW</strong><span>coffee</span></a>
+          <p>Независимая specialty-кофейня. Своя обжарка, свой хлеб и спокойная атмосфера с 2022 года.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Навигация</h3>
+          <ul>
+            <li><a href="./index.html">Главная</a></li>
+            <li><a href="./menu.html">Меню</a></li>
+            <li><a href="./coffee.html">Кофе</a></li>
+            <li><a href="./bakery.html">Выпечка</a></li>
+            <li><a href="./about.html">О нас</a></li>
+            <li><a href="./contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Связаться</h3>
+          <ul>
+            <li><a href="tel:+79001002040">+7 (900) 100-20-40</a></li>
+            <li><a href="mailto:hello@morrowcoffee.ru">hello@morrowcoffee.ru</a></li>
+            <li class="f-plain">пн–пт 8:00–22:00 · сб–вс 9:00–23:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 MORROW COFFEE — демонстрационный сайт, данные условные.</span>
+        <span>Кофе сегодня. Кофе завтра.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js" defer></script>
+</body>
+</html>

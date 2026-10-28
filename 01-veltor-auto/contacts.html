@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VELTOR AUTO — Контакты и запись</title>
+  <script>document.documentElement.classList.add("js");</script>
+  <meta name="description" content="Контакты мастерской VELTOR AUTO: адрес, телефон, часы работы и форма записи на диагностику, ТО, подвеску и тормоза. Адрес и цены демонстрационные.">
+  <link rel="stylesheet" href="./css/fonts.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230B0C0E'/%3E%3Cpath d='M8 8l8 16 8-16h-5l-3 7-3-7z' fill='%23E8631A'/%3E%3C/svg%3E">
+</head>
+<body>
+  <a class="skip-link" href="#main">К основному содержанию</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="./index.html">
+        <span class="brand-name">VELTOR&nbsp;<em>AUTO</em></span>
+        <span class="brand-sub">Независимый автосервис</span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Основная навигация">
+        <ul>
+          <li><a href="./index.html">Главная</a></li>
+          <li><a href="./services.html">Услуги</a></li>
+          <li><a href="./prices.html">Цены</a></li>
+          <li><a href="./about.html">О мастерской</a></li>
+          <li><a href="./contacts.html" aria-current="page">Контакты</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a class="header-phone" href="tel:+79001002030">+7 (900) 100-20-30</a>
+          <a class="btn btn-accent" href="./contacts.html#form">Записаться</a>
+        </div>
+      </nav>
+      <a class="header-phone" href="tel:+79001002030">+7 (900) 100-20-30</a>
+      <a class="btn btn-accent btn-sm header-cta" href="./contacts.html#form">Записаться</a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-head">
+      <div class="container">
+        <p class="kicker">VT·05 — Контакты</p>
+        <h1>Приезжайте или напишите нам</h1>
+        <p class="page-intro">Звонок быстрее формы: на линии отвечаем с 9:00 до 20:00, пн–сб. Через форму получится без спешки — перезвоним в течение рабочего дня и согласуем удобное время.</p>
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+          <a href="./index.html">Главная</a>
+          <span aria-current="page">Контакты</span>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Контакты + форма -->
+    <section class="section" aria-labelledby="contacts-title">
+      <div class="container">
+        <div class="contact-grid">
+
+          <div>
+            <p class="kicker">VT·Связь</p>
+            <h2 id="contacts-title" style="margin-bottom:24px">Адрес и телефон</h2>
+
+            <div class="contact-list">
+              <div class="contact-item">
+                <span class="mono-label">Адрес</span>
+                <span class="big">ул. Примерная, д. 12</span>
+                <p class="note">Адрес демонстрационный: сайт-макет не привязан к реальному заведению.</p>
+                <button class="copy-btn" id="copy-address" type="button" data-copy="ул. Примерная, д. 12">
+                  <span class="copy-label">Скопировать адрес</span>
+                </button>
+              </div>
+              <div class="contact-item">
+                <span class="mono-label">Телефон</span>
+                <a class="big" href="tel:+79001002030">+7 (900) 100-20-30</a>
+                <p class="note">Звонки и голосовые сообщения — по часам работы: пн–сб, 9:00–20:00.</p>
+              </div>
+              <div class="contact-item">
+                <span class="mono-label">Электронная почта</span>
+                <a class="big" href="mailto:zapis@veltor-auto.ru">zapis@veltor-auto.ru</a>
+                <p class="note">Для смет, фото и вопросов по VIN с документами. Отвечаем в течение суток.</p>
+              </div>
+              <div class="contact-item">
+                <span class="mono-label">Режим работы</span>
+                <span class="big">пн–сб · 9:00–20:00</span>
+                <p class="note">Воскресенье — выходной. Приём машины с 9:00, забрать можно до 20:00.</p>
+              </div>
+            </div>
+
+            <div class="map-note">
+              <b>Как найти:</b> ворота со стороны улицы, вывеска с оранжевой «V». На территории — парковка на 6 машин и стенд сход-развала слева от въезда.
+            </div>
+          </div>
+
+          <div id="form">
+            <div class="form-card">
+              <h2>Записаться на визит</h2>
+              <p>Опишите машину и повод — этого хватит, чтобы назвать срок и предварительно оценить работу. Цены — <a href="./prices.html">в разделе «Цены»</a>.</p>
+
+              <form id="booking-form" novalidate>
+                <div class="form-grid">
+                  <div class="field">
+                    <label for="f-name">Ваше имя <b>*</b></label>
+                    <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Например: Андрей" aria-describedby="f-name-err" required>
+                    <span class="err" id="f-name-err" aria-live="polite"></span>
+                  </div>
+                  <div class="field">
+                    <label for="f-phone">Телефон <b>*</b></label>
+                    <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (912) 345-67-89" aria-describedby="f-phone-err" required>
+                    <span class="err" id="f-phone-err" aria-live="polite"></span>
+                  </div>
+                  <div class="field">
+                    <label for="f-service">Услуга</label>
+                    <select id="f-service" name="service">
+                      <option value="">— выберите услугу —</option>
+                      <option value="computer-diagnostics">Компьютерная диагностика</option>
+                      <option value="oil-change">Замена масла и фильтров</option>
+                      <option value="suspension-diagnostics">Диагностика подвески</option>
+                      <option value="brake-pads">Замена тормозных колодок</option>
+                      <option value="maintenance">ТО (сезонное обслуживание)</option>
+                      <option value="brake-discs">Замена тормозных дисков</option>
+                      <option value="shock-absorbers">Замена амортизаторов</option>
+                      <option value="wheel-alignment">Сход-развал (3D-стенд)</option>
+                      <option value="battery">Обслуживание АКБ и электрики</option>
+                      <option value="ac-service">Диагностика кондиционера</option>
+                      <option value="other">Другое / ещё не определился</option>
+                    </select>
+                    <span class="err" aria-hidden="true"></span>
+                  </div>
+                  <div class="field">
+                    <label for="f-car">Марка, модель, VIN</label>
+                    <input id="f-car" name="car" type="text" autocomplete="off" placeholder="Kia Rio 2019, VIN необязателен">
+                    <span class="err" aria-hidden="true"></span>
+                  </div>
+                  <div class="field field-full">
+                    <label for="f-comment">Что происходит с машиной</label>
+                    <textarea id="f-comment" name="comment" placeholder="Симптомы, давность, что уже проверяли — своими словами"></textarea>
+                    <span class="err" aria-hidden="true"></span>
+                  </div>
+                </div>
+
+                <div class="form-actions">
+                  <button class="btn btn-accent" type="submit">Отправить заявку</button>
+                  <span class="form-hint">Форма демо-страницы: заявка никуда не уходит и на сервер не передаётся.</span>
+                </div>
+
+                <div class="form-success hidden" id="form-success" role="status" aria-hidden="true">
+                  Заявка сформирована локально и не отправляется на сервер — позвоните нам: <b><a href="tel:+79001002030">+7 (900) 100-20-30</a></b>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Как проходит запись -->
+    <section class="section on-light" aria-labelledby="reg-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="kicker">VT·Порядок</p>
+            <h2 id="reg-title">Как проходит запись</h2>
+          </div>
+          <p>Короткий маршрут от первого звонка до выдачи машины.</p>
+        </div>
+
+        <div class="principles">
+          <div class="principle reveal">
+            <span class="mono">01</span>
+            <h3>Звонок или форма</h3>
+            <p>Слушаем вас внимательно и сразу фиксируем повод, марку и удобное время.</p>
+          </div>
+          <div class="principle reveal">
+            <span class="mono">02</span>
+            <h3>Осмотр по записи</h3>
+            <p>К позиции вашего визита машина на подъёмнике в первые полчаса — не в конце очереди.</p>
+          </div>
+          <div class="principle reveal">
+            <span class="mono">03</span>
+            <h3>Смета до работ</h3>
+            <p>Протокол осмотра, цены и варианты — на руки. Начинаем только после вашего «ок».</p>
+          </div>
+          <div class="principle reveal">
+            <span class="mono">04</span>
+            <h3>Выдача с отчётом</h3>
+            <p>Фото до/после, список заменённых деталей и гарантия — 6 месяцев на работы.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="./index.html">
+            <span class="brand-name">VELTOR&nbsp;<em>AUTO</em></span>
+            <span class="brand-sub">Независимый автосервис</span>
+          </a>
+          <p class="footer-note">Диагностика, ТО, подвеска и тормоза. Сначала причина — потом смета. Гарантия на работы — 6 месяцев.</p>
+        </div>
+        <nav aria-label="Навигация в футере">
+          <div class="footer-title">Разделы</div>
+          <ul>
+            <li><a href="./index.html">Главная</a></li>
+            <li><a href="./services.html">Услуги</a></li>
+            <li><a href="./prices.html">Цены</a></li>
+            <li><a href="./about.html">О мастерской</a></li>
+            <li><a href="./contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="footer-contacts">
+          <div class="footer-title">Связь</div>
+          <ul>
+            <li><a class="mono" href="tel:+79001002030">+7 (900) 100-20-30</a></li>
+            <li><a href="mailto:zapis@veltor-auto.ru">zapis@veltor-auto.ru</a></li>
+            <li><span class="text-muted">пн–сб · 9:00–20:00</span></li>
+            <li><span class="text-muted">ул. Примерная, д. 12</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> VELTOR AUTO — демонстрационный сайт, данные условные</span>
+        <a href="#top">Наверх ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MORROW COFFEE — полное меню кофейни</title>
+  <script>document.documentElement.classList.add("js");</script>
+  <meta name="description" content="Полное меню MORROW COFFEE: кофе и не кофейное, авторская выпечка и зерно в пачках по 250 г. Табы по категориям, вкусовые описания и демонстрационные цены.">
+  <link rel="stylesheet" href="./fonts/fonts.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="logo" href="./index.html"><strong>MORROW</strong><span>coffee</span></a>
+      <nav class="main-nav" id="siteNav" aria-label="Основная навигация">
+        <ul>
+          <li><a href="./index.html">Главная</a></li>
+          <li><a href="./menu.html" aria-current="page">Меню</a></li>
+          <li><a href="./coffee.html">Кофе</a></li>
+          <li><a href="./bakery.html">Выпечка</a></li>
+          <li><a href="./about.html">О нас</a></li>
+          <li><a href="./contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <a class="header-phone" href="tel:+79001002040">+7 (900) 100-20-40</a>
+      <button class="burger" aria-expanded="false" aria-controls="siteNav" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-title">
+      <div class="wrap">
+        <p class="eyebrow">Меню · обновляется каждую пятницу</p>
+        <h1>Всё, что подают в <em class="it">MORROW</em></h1>
+        <p class="lead">От классического эспрессо до сезонного пирога. Цены указаны за порцию; зерно продаём пачками 250 г с помолом под вашу технику.</p>
+        <p class="disclaimer-note" style="margin-top: 14px;">Цены демонстрационные — сайт создан как портфолио-проект и не отражает реальное заведение.</p>
+      </div>
+    </section>
+
+    <!-- Фиксированная мини-навигация по категориям -->
+    <div class="cat-tabs">
+      <div class="wrap">
+        <div id="catTabs" role="tablist" aria-label="Категории меню">
+          <button class="cat-tab" role="tab" data-cat="all" type="button">Всё <span class="cnt"></span></button>
+          <button class="cat-tab" role="tab" data-cat="coffee" type="button">Кофе <span class="cnt"></span></button>
+          <button class="cat-tab" role="tab" data-cat="noncoffee" type="button">Не кофейное <span class="cnt"></span></button>
+          <button class="cat-tab" role="tab" data-cat="bakery" type="button">Выпечка <span class="cnt"></span></button>
+          <button class="cat-tab" role="tab" data-cat="beans" type="button">Зерно <span class="cnt"></span></button>
+        </div>
+      </div>
+    </div>
+
+    <section class="section-tight" aria-label="Позиции меню">
+      <div class="wrap">
+        <div id="menuGrid" class="items-grid" role="tabpanel" aria-label="Карточки меню">
+          <!-- Карточки рендерит js/main.js из объекта MENU_ITEMS (работает офлайн, по file://) -->
+        </div>
+
+        <hr class="hairline" style="margin-top: clamp(40px, 6vw, 80px);">
+
+        <div class="two-col" style="margin-top: 30px;">
+          <div>
+            <p class="eyebrow">Альтернативные способы</p>
+            <h2 style="font-size: 1.8rem;">Фильтр и альтернатива</h2>
+            <p style="color: var(--muted); max-width: 52ch;">Любой лот с витрины зерна можно сварить воронкой V60 или кемекс-ом. Скажите бариста, что хотите «альтернативу», — покажем три свежих происхождения и поможем выбрать.</p>
+          </div>
+          <div class="menu-lines">
+            <div class="menu-line"><span class="ml-name">Паур-овер <em>V60</em></span><span class="ml-note">3 сингл-ориджина на выбор</span><span class="ml-dots"></span><span class="ml-price">от 240 ₽</span></div>
+            <div class="menu-line"><span class="ml-name">Кемекс <em>на двоих</em></span><span class="ml-note">450 мл, деликатный профиль</span><span class="ml-dots"></span><span class="ml-price">380 ₽</span></div>
+            <div class="menu-line"><span class="ml-name">Аэропресс <em>короткая и крепкая</em></span><span class="ml-note">две минуты — и готово</span><span class="ml-dots"></span><span class="ml-price">220 ₽</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="logo" href="./index.html"><strong>MORROW</strong><span>coffee</span></a>
+          <p>Независимая specialty-кофейня. Своя обжарка, свой хлеб и спокойная атмосфера с 2022 года.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Навигация</h3>
+          <ul>
+            <li><a href="./index.html">Главная</a></li>
+            <li><a href="./menu.html">Меню</a></li>
+            <li><a href="./coffee.html">Кофе</a></li>
+            <li><a href="./bakery.html">Выпечка</a></li>
+            <li><a href="./about.html">О нас</a></li>
+            <li><a href="./contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Связаться</h3>
+          <ul>
+            <li><a href="tel:+79001002040">+7 (900) 100-20-40</a></li>
+            <li><a href="mailto:hello@morrowcoffee.ru">hello@morrowcoffee.ru</a></li>
+            <li class="f-plain">пн–пт 8:00–22:00 · сб–вс 9:00–23:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 MORROW COFFEE — демонстрационный сайт, цены условные.</span>
+        <span>Кофе сегодня. Кофе завтра.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js" defer></script>
+</body>
+</html>

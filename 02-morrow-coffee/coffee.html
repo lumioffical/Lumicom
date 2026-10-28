@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MORROW COFFEE — кофейная карта и обжарка</title>
+  <script>document.documentElement.classList.add("js");</script>
+  <meta name="description" content="Кофейная карта MORROW COFFEE: напитки 250/350/450 мл, профили обжарки, три происхождения зерна (Эфиопия, Колумбия, Бразилия) и пачки 250 г — помол на выбор.">
+  <link rel="stylesheet" href="./fonts/fonts.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="logo" href="./index.html"><strong>MORROW</strong><span>coffee</span></a>
+      <nav class="main-nav" id="siteNav" aria-label="Основная навигация">
+        <ul>
+          <li><a href="./index.html">Главная</a></li>
+          <li><a href="./menu.html">Меню</a></li>
+          <li><a href="./coffee.html" aria-current="page">Кофе</a></li>
+          <li><a href="./bakery.html">Выпечка</a></li>
+          <li><a href="./about.html">О нас</a></li>
+          <li><a href="./contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <a class="header-phone" href="tel:+79001002040">+7 (900) 100-20-40</a>
+      <button class="burger" aria-expanded="false" aria-controls="siteNav" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-title">
+      <div class="wrap">
+        <p class="eyebrow">Кофейная карта · зеркало сезона</p>
+        <h1>Кофе: от эспрессо до <em class="it">воронки</em></h1>
+        <p class="lead">Три объёма для молочных напитков, отдельная дорога для фильтра и всегда честная рекомендация бариста. Не знаете, что взять, — скажите «что вы сами пили сегодня?».</p>
+        <p class="disclaimer-note" style="margin-top: 14px;">Цены демонстрационные — портфолио-проект, не реальное заведение.</p>
+      </div>
+    </section>
+
+    <!-- Карта напитков с размерами -->
+    <section class="section-tight">
+      <div class="wrap">
+        <div class="drink-grid">
+          <div>
+            <div class="section-head" style="margin-bottom: 30px;">
+              <p class="eyebrow">Напитки</p>
+              <h2>Размеры и <em class="it">цены</em></h2>
+            </div>
+            <p style="color: var(--muted); margin-bottom: 26px;">Безлактозное овсяное молоко — без доплаты. Клавиша «меньше сахара» тоже существует: просто попросите.</p>
+            <figure style="margin: 0; border-radius: 18px; overflow: hidden;">
+              <img src="./images/pour-over.jpg" alt="Дроп-станция с колбами свежего фильтр-кофе" loading="lazy" width="1920" height="1296" style="width: 100%;">
+            </figure>
+          </div>
+          <div id="drinkList" class="menu-lines" aria-label="Напитки и цены по объёмам">
+            <!-- Рендерится js/main.js в initCoffeePage -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap"><hr class="hairline"></div>
+
+    <!-- Обжарка -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Обжарка · малыми партиями</p>
+          <h2>Три профиля, три <em class="it">происхождения</em></h2>
+        </div>
+
+        <div class="two-col" style="margin-bottom: clamp(36px, 5vw, 64px);">
+          <div class="principles reveal">
+            <div class="principle">
+              <span class="p-num">01</span>
+              <div>
+                <h3>Эспрессо-профиль</h3>
+                <p>Чуть темнее среднего. Даем зерну отдохнуть 5–7 дней после обжарки — так купаж раскрывается в молоке и работает в классических напитках.</p>
+              </div>
+            </div>
+            <div class="principle">
+              <span class="p-num">02</span>
+              <div>
+                <h3>Фильтр-профиль</h3>
+                <p>Светлое обжаривание с последующей стабилизацией. Кислотность яркая, но не «царапающая» — для V60 и кемекса.</p>
+              </div>
+            </div>
+            <div class="principle">
+              <span class="p-num">03</span>
+              <div>
+                <h3>«Для всех»</h3>
+                <p>Наш Эспрессо-бленд: конфеты, какао, орех. Профиль подбирали полгода, чтобы он был одинаково хорош и без молока, и с ним.</p>
+              </div>
+            </div>
+          </div>
+          <figure class="reveal" style="margin: 0;">
+            <img src="./images/roaster.jpg" alt="Обжарка кофе на углях — инспекция зерна перед обжаркой основных партий" loading="lazy" width="1920" height="1280" style="border-radius: 18px;">
+            <figcaption class="photo-caption"><span>Пробный рост лота</span><span>до первой трещины — 9:40</span></figcaption>
+          </figure>
+        </div>
+
+        <div id="beans" class="bean-cards">
+          <article class="bean-card reveal">
+            <span class="origin">Эфиопия · сидамо</span>
+            <h3>«Эфиопия»</h3>
+            <p class="flavor">Ирга, жасмин, бергамот — самый цветущий лот карты.</p>
+            <p class="bean-meta">Промывная обработка, высота 1900 м. Идеальна для фильтра, сохраняет характер в капучино.</p>
+            <p class="bc-price"><span>250 г · помол на выбор</span><strong>950 ₽</strong></p>
+          </article>
+          <article class="bean-card reveal">
+            <span class="origin">Колумбия · взаим</span>
+            <h3>«Колумбия»</h3>
+            <p class="flavor">Молочный шоколад, красное яблоко, карамель.</p>
+            <p class="bean-meta">Мытая обработка, высота 1700 м. Универсальный лот — работает и в эспрессо, и в воронке.</p>
+            <p class="bc-price"><span>250 г · помол на выбор</span><strong>900 ₽</strong></p>
+          </article>
+          <article class="bean-card reveal">
+            <span class="origin">Бразилия · сантарен</span>
+            <h3>«Бразилия»</h3>
+            <p class="flavor">Фундук, какао, плотное сладкое тело.</p>
+            <p class="bean-meta">Натуральная обработка, высота 1100 м. Лучшая база для домашнего эспрессо и гейзерной кофеварки.</p>
+            <p class="bc-price"><span>250 г · помол на выбор</span><strong>850 ₽</strong></p>
+          </article>
+        </div>
+        <p class="disclaimer-note" style="margin-top: 18px;">Названия регионов и профили — демонстрационные, для портфолио-проекта.</p>
+      </div>
+    </section>
+
+    <!-- Как выбрать -->
+    <section class="section-tight">
+      <div class="wrap">
+        <hr class="hairline">
+        <div class="two-col" style="margin-top: 34px;">
+          <div class="section-head reveal" style="margin-bottom: 0;">
+            <p class="eyebrow">Как выбрать</p>
+            <h2>Мини-гайд за <em class="it">минуту</em></h2>
+          </div>
+          <div class="principles">
+            <div class="principle"><span class="p-num">→</span><div><h3>Любите молоко?</h3><p>Берите Эспрессо-бленд или Колумбию: с изменчивой молочной пеной они звучат по-шоколадному, а не теряются.</p></div></div>
+            <div class="principle"><span class="p-num">→</span><div><h3>Пьёте без сахара?</h3><p>Эфиопия на V60 — чайная прозрачность и ягода. Не возражайте против «кислинки», это признак светлой обжарки.</p></div></div>
+            <div class="principle"><span class="p-num">→</span><div><h3>Гейзерная кофеварка дома?</h3><p>Бразилия, помол «под гейзер». Она про крепость тела, а не про ярость вкуса.</p></div></div>
+            <div class="principle"><span class="p-num">→</span><div><h3>Подарок</h3><p>Пачка 250 г + открытка с датой обжарки — спрашивайте на кассе, завернём комплиментом.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section-tight">
+      <div class="wrap">
+        <div class="cta-panel reveal">
+          <div>
+            <h2>Свежая партия — <em class="it">по вторникам</em></h2>
+            <p>Молем пачку прямо у кассы под ваш способ заваривания. Или попробуйте сначала чашку на месте.</p>
+          </div>
+          <a class="btn btn-solid" href="./contacts.html#booking">Забронировать столик</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="logo" href="./index.html"><strong>MORROW</strong><span>coffee</span></a>
+          <p>Независимая specialty-кофейня. Своя обжарка, свой хлеб и спокойная атмосфера с 2022 года.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Навигация</h3>
+          <ul>
+            <li><a href="./index.html">Главная</a></li>
+            <li><a href="./menu.html">Меню</a></li>
+            <li><a href="./coffee.html">Кофе</a></li>
+            <li><a href="./bakery.html">Выпечка</a></li>
+            <li><a href="./about.html">О нас</a></li>
+            <li><a href="./contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Связаться</h3>
+          <ul>
+            <li><a href="tel:+79001002040">+7 (900) 100-20-40</a></li>
+            <li><a href="mailto:hello@morrowcoffee.ru">hello@morrowcoffee.ru</a></li>
+            <li class="f-plain">пн–пт 8:00–22:00 · сб–вс 9:00–23:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 MORROW COFFEE — демонстрационный сайт, цены условные.</span>
+        <span>Кофе сегодня. Кофе завтра.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js" defer></script>
+</body>
+</html>

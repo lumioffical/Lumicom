@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BYTECARE LAB — каталог услуг: ноутбуки, ПК, сборка, периферия</title>
+  <script>document.documentElement.classList.add("js");</script>
+<meta name="description" content="Каталог услуг BYTECARE LAB: чистка систем охлаждения, замена матрицы и клавиатуры, сборка ПК, восстановление данных. В каждой услуге — состав работ и демо-цена «от».">
+<link rel="stylesheet" href="./css/style.css">
+<script src="./js/main.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к основному содержанию</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="./index.html" aria-label="BYTECARE LAB — на главную">
+      <span class="logo__mark" aria-hidden="true">BC</span>
+      <span>BYTECARE LAB<span class="logo__tag">computer repair lab</span></span>
+    </a>
+    <button class="burger" aria-controls="site-nav" aria-expanded="false">
+      <span></span><span></span><span></span>
+      <span class="visually-hidden">Меню</span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Основная навигация">
+      <ul>
+        <li><a href="./index.html">Главная</a></li>
+        <li><a href="./services.html" aria-current="page">Услуги</a></li>
+        <li><a href="./diagnostics.html">Диагностика</a></li>
+        <li><a href="./prices.html">Цены</a></li>
+        <li><a href="./warranty.html">Гарантия</a></li>
+        <li><a href="./contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
+    <a class="header-cta" href="tel:+79001002050">+7 900 100-20-50</a>
+  </div>
+</header>
+
+<main id="main">
+  <div class="page-hero">
+    <div class="wrap">
+      <p class="crumbs"><a href="./index.html">index</a> / <span aria-current="page">services</span></p>
+      <h1>Каталог услуг</h1>
+      <p class="lead">Сгруппировали работы по категориям: в каждой карточке — что входит в цену, сколько длится работа и что оплачивается отдельно. Цены демонстрационные; итоговая смета согласовывается после диагностики.</p>
+      <p class="demo-note">💡 Диагностика 700 ₽ — отдельная позиция прайса. При согласии на ремонт она входит в цену ремонта (доплачивать не нужно).</p>
+    </div>
+  </div>
+
+  <section class="section" id="services-root" aria-label="Услуги по категориям">
+    <div class="wrap">
+      <!-- cards rendered by js/main.js from SERVICES (works via file://, no fetch) -->
+      <noscript>
+        <p>Для просмотра каталога включите JavaScript — на странице цен все услуги перечислены в таблицах.</p>
+      </noscript>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="wrap">
+      <div class="split reveal">
+        <div class="figure">
+          <img src="./images/workshop-tools.jpg" alt="Мастерская: мастер ремонтирует устройство, рядом набор инструментов и мультиметр">
+          <figcaption>SAMPLE-PHOTO · LAB-BENCH-02 · изображение демонстрационное</figcaption>
+        </div>
+        <div>
+          <span class="section-head__kicker">HOW.WE.QUOTE</span>
+          <h2>Как формируется итоговая цена</h2>
+          <p>Цена «от» — это стоимость типовой работы на типовом устройстве. После диагностики мастер пишет точную смету: стоимость работы + комплектующие, если они нужны. Комплектующие отдельно: мы присылаем ссылки, можно купить самостоятельно.</p>
+          <p>Если по итогам диагностики устройство неремонтопригодно — вы платите только за диагностику 700 ₽.</p>
+          <a class="btn btn--outline" href="./prices.html">Смотреть все цены</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="section-head__kicker">FAQ.SCAN</span>
+          <h2 id="faq-title">Частые вопросы</h2>
+        </div>
+      </div>
+      <div class="faq reveal">
+        <div class="faq__item">
+          <button class="faq__q" type="button" aria-expanded="false">Вы гарантируете, что почините устройство?<span class="faq__icon" aria-hidden="true"></span></button>
+          <div class="faq__a"><p>Нет, «гарантированного восстановления любых устройств» не обещаем — это честный ответ. Диагностика может показать неремонтопригодность (например, плату с критической коррозией). Тогда мы вернём устройство и взимаем плату только за диагностику.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" type="button" aria-expanded="false">Сколько стоит диагностика и когда она платная?<span class="faq__icon" aria-hidden="true"></span></button>
+          <div class="faq__a"><p>Диагностика стоит 700 ₽ (демо-цена). При согласии на ремонт она входит в цену ремонта — отдельно не тарифицируется. Если вы отказываетесь от ремонта или ремонт невозможен, диагностика остаётся платной.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" type="button" aria-expanded="false">Как быстро вы берёте в работу?<span class="faq__icon" aria-hidden="true"></span></button>
+          <div class="faq__a"><p>Обычно устройство принимаем в день обращения, ремонт стартует после согласования сметы. Типовые работы (чистка, термопаста, SSD) делаем за 1–2 часа, сложные — до 3 дней. Срочность: ускорение возможно, если свободный слот мастера в этот день.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" type="button" aria-expanded="false">Что если проблема старая — имеет ли значение давность?<span class="faq__icon" aria-hidden="true"></span></button>
+          <div class="faq__a"><p>Возраст устройства влияет на доступность запчастей, но не на готовность принять его в работу. Если для вашей модели деталь давно снята с производства, скажем об этом сразу после диагностики и предложим альтернативы.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" type="button" aria-expanded="false">Комплектующие вы продаёте сами или я покупаю?<span class="faq__icon" aria-hidden="true"></span></button>
+          <div class="faq__a"><p>По умолчанию — как удобно. Мы можем заказать детали (наценка не включена в цену работы), либо вы привозите свои. Гарантия на ваши комплектующие не распространяется: гарантируем только качество их установки.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band">
+    <div class="wrap">
+      <div>
+        <h2>Не нашли нужную услугу?</h2>
+        <p>Опишите проблему — подскажем, чем можем помочь, или честно скажем, если задача не наша.</p>
+      </div>
+      <div class="cta-band__actions">
+        <a class="btn btn--primary" href="./contacts.html#form">Оставить заявку</a>
+        <a class="btn btn--ghost" href="tel:+79001002050">Позвонить</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <a class="logo" href="./index.html" style="margin-bottom:14px">
+        <span class="logo__mark" aria-hidden="true">BC</span>
+        <span>BYTECARE LAB<span class="logo__tag">computer repair lab</span></span>
+      </a>
+      <p style="max-width:320px">Ремонт и обслуживание ноутбуков, ПК и периферии. Демонстрационный сайт мастерской.</p>
+    </div>
+    <div>
+      <h3>Навигация</h3>
+      <ul>
+        <li><a href="./index.html">Главная</a></li>
+        <li><a href="./services.html">Услуги</a></li>
+        <li><a href="./diagnostics.html">Диагностика</a></li>
+        <li><a href="./prices.html">Цены</a></li>
+        <li><a href="./warranty.html">Гарантия</a></li>
+        <li><a href="./contacts.html">Контакты</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Связаться</h3>
+      <ul>
+        <li><a href="tel:+79001002050">+7 (900) 100-20-50</a></li>
+        <li><a href="mailto:hello@bytecare-lab.ru">hello@bytecare-lab.ru</a></li>
+        <li>пн–сб 10:00–19:00</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="wrap-inner">
+      <span>© 2026 BYTECARE LAB — демонстрационный сайт, данные условные</span>
+      <span class="mono">BUILD v1.0 · no-network demo</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
